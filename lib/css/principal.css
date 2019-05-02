@@ -39,6 +39,11 @@ body{
 	background: url('../../imgs/textura.jpg');
 }
 
+.f-nav{
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
 
 nav{
 	background-color:rgba(220,70,120);
@@ -57,12 +62,38 @@ nav ul li a:hover{
 	background: #e3841b;
 }
 
+.modal-content{
+	text-align: justify;
+}
+
+.modal-content p a{
+	color: #fff;
+	text-decoration: underline;
+}
 .bloco-rosa{
 	
 	background-color:rgba(220,70,120);
 	display: table;
 	width: 100%;
 	color: #fff;
+}
+
+.det-rodp{
+	margin-top: 27px;
+}
+
+.modal-rosa{
+		color: #fff;
+	background-color:rgba(220,70,120) !important;
+}
+
+.modal-laranja{
+		color: #fff;
+	background:#df7c1a !important;
+}
+
+.btn-flat{
+	color: #fff !important;
 }
 
 .conteudo{
@@ -141,9 +172,14 @@ nav ul li:first-child{
     min-height: 230px !important;
 }
 
-.detalhes{
+.bloco-laranja,.bloco-rosa{
 
 	position: relative;
+}
+.bloco-laranja .btn-floating,.bloco-rosa .btn-floating{
+	position: absolute;
+	bottom: 20px;
+	right: 20px
 }
 .bloco-laranja{
 	background: #df7c1a;
@@ -213,6 +249,96 @@ nav ul li:first-child{
 .botao-quatro{
 	background: #da801a;
 }
+
+.rosa-bg{
+	background-color: rgba(220,70,120);
+}
+
+.laranja-bg{
+	background: #df7c1a;
+}
+.sessao-informacoes{
+	margin-top: 45px;
+}
+.sessao-informacoes iframe{
+	float: left;
+	margin-top: 18px;
+
+}
+.rosa-bg,.laranja-bg{
+	color: #fff;
+	display: table;
+	width: 100%;
+	font-family: 'Gotham-Light';
+}
+
+.rosa-bg h4,.laranja-bg h4{
+	font-family: 'Gotham-Light';
+	margin-bottom: 5px;
+}
+
+.no-margin{
+	margin-bottom: 0;
+}
+
+.btn-floating.btn-large {
+	width: 30px;
+	height: 30px;
+}
+
+.btn-floating i{
+	color: #df7c1a !important;
+}
+
+.btn-floating.btn-large i {
+    line-height: 56px;
+    position: relative;
+    top: -13px;
+}
+
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+        background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    -webkit-transition: border .3s, -webkit-box-shadow .3s;
+    transition: border .3s, -webkit-box-shadow .3s;
+    transition: box-shadow .3s, border .3s;
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+    box-sizing: inherit;
+}
+.input-field{
+	margin-bottom: 0;
+}
+.input-field.col label {
+    left: 1.75rem;
+}
+textarea.materialize-textarea{
+	height: 100px;
+}
+
+.sessao-patrocinios{
+	margin-top: 40px;
+}
+
+form{
+	display: table;
+	width: 100%;
+	    padding: 0 30px !important;
+}
+.sessao-patrocinios h4{
+	margin-bottom: 20px;
+}
 @media only screen and  (min-width:1150px){
 
 	.container{
@@ -239,8 +365,14 @@ nav ul li:first-child{
 
 }
 /* COL-SM */
-@media only screen and  (max-width:992px) and (min-width:767px){
+@media only screen and  (max-width:992px) {
     
+    .dog-flutante{
+    	display: none;
+    }
+
+    .bloco-rosa h2 {
+    font-size: 43px;}
 }
 /* COL-XS */
 @media only screen and  (max-width:767px){
@@ -248,5 +380,58 @@ nav ul li:first-child{
 	#maxmeio-id{
 		display: none !important;
 	}
+
+	.dog-flutante{
+		display: none;
+	}
+
+	.sessao-evento h1{
+		font-size: 250%;
+	}
+
+	.bloco-rosa h2{
+		font-size: 44px;
+	}
+
+	.sessao-programacao{
+		
+	}
+	.det-rodp span{
+		display: block;
+	}
+
+	.interna{
+		padding: 0;
+	}
+	.interna h3{
+		font-size: 200%;
+	}
+
+	.sessao-inscricao h4{
+		font-size: 43px;
+	}
+	.sessao-inscricao h4 span{
+		font-size: 26px;
+	}
+
+	h4 {
+    font-size: 1.28rem;}
+
+    .sidenav{
+    	background: #db4579;
+    }
+
+    .sidenav li>a{
+    	color: #fff !important;
+    }
+
+    .logo {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.f-nav{
+	position: relative !important;
+}
 
 }
