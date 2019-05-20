@@ -1,0 +1,89 @@
+
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+       background: url(textura.jpg); 
+}
+
+@font-face {
+    font-family: 'Gothambook';
+    src: url('Gotham-Book.woff2') format('woff2'),
+        url('Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Black.woff2') format('woff2'),
+        url('Gotham-Black.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+ h1, h2, h3, h4, h5, h6{
+  font-family: 'Gotham';
+ }
+body, p, ul, ol, dl, input, textarea {
+    font-family: 'Gothambook';
+}
+
+
+
+h3.titulo{
+  font-size: 22px !important;
+}
+
+.form-signin {
+  max-width: 631px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-group input{
+  margin-bottom: 20px !important; 
+}
+
+.formulario{
+	font-size: 11px;
+}
+
+.texto{
+  text-align: justify;
+}
+
+.panel-default>.panel-heading {
+    color: #fff;
+    background-color: rgba(220,70,120);
+    border-color: rgba(220,70,120);
+    font-weight: bold;
+}
