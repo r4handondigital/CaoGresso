@@ -26,7 +26,7 @@
 				
 				if($quer->rowCount() > 140):					
 
-					echo '<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">alert ("'.$mens.'");window.location=("http://petlovers2.com.br/caogresso/dogvip/")
+					echo '<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">alert ("'.$mens.'");window.location=("http://petlovers2.com.br/caogressos2/dogvip/")
 							</SCRIPT>';	
 					die();
 
@@ -41,7 +41,7 @@
 
 
 					if(!filter_var($email, FILTER_SANITIZE_EMAIL)):
-						echo '<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">alert ("Por favor, digite um e-mail válido!");window.location=("http://petlovers2.com.br/caogresso/dogvip/")
+						echo '<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">alert ("Por favor, digite um e-mail válido!");window.location=("http://petlovers2.com.br/caogressos2/dogvip/")
 								</SCRIPT>';	
 						die();
 					endif;
@@ -56,7 +56,7 @@
 					$query_cpf->execute();					
 					
 					if($query_cpf->rowCount() == 1):
-						echo '<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">alert ("O CPF já está cadastrado!");window.location=("http://petlovers2.com.br/caogresso/dogvip/")
+						echo '<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">alert ("O CPF já está cadastrado!");window.location=("http://petlovers2.com.br/caogressos2/dogvip/")
 								</SCRIPT>';	
 						die();
 					endif;
@@ -169,7 +169,7 @@
 
 		}else{
 
-			header("Location: http://petlovers2.com.br/caogresso/dogvip/");die();
+			header("Location: http://petlovers2.com.br/caogressos2/dogvip/");die();
 		}
 
 
@@ -312,19 +312,30 @@
   #Após o final da inscrição você será redirecionado para a página de pagamento.<strong></strong></p>
         <br />
         <p><strong>Informações do inscrito:</strong></p>
-         <div class="form-group">
-            <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome Completo:" required>
+        <div class="form-group">
+		    <label for="nome">Nome Completo:</label>
+		    <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome Completo:" required>
+		 </div>
+		
+		 <div class="form-group">
+		    <label for="cpf">CPF:</label>
+		   <input type="text" name="cpf" id="cpf" class="form-control" placeholder="CPF:" required>  
+		 </div>
 
-            <input type="text" name="cpf" id="cpf" class="form-control" placeholder="CPF:" required>           
+		 <div class="form-group">
+		    <label for="email">E-mail:</label>
+		  <input type="email" name="email" id="email" class="form-control" placeholder="E-mail:" required> 
+		 </div>
 
-            <input type="email" name="email" id="email" class="form-control" placeholder="E-mail:" required>
-			 
-			 <input type="text" name="telefone" id="phone" class="form-control" placeholder="Telefone:" required>
+		 <div class="form-group">
+		    <label for="phone">Telefone:</label>
+		  <input type="text" name="telefone" id="phone" class="form-control" placeholder="Telefone:" required>
+		 </div>
 
-            <input type="text" name="endereco" id="rg" class="form-control" placeholder="Endereço:" required>   
-           
-
-         </div>
+		 <div class="form-group">
+		    <label for="rg">Endereço:</label>
+		 <input type="text" name="endereco" id="rg" class="form-control" placeholder="Endereço:" required> 
+		 </div>
         
          <input name="enviar"  value="pergunta" type="hidden" />
          <input name="cpfcasal" value="" style="display:none;" />
@@ -344,7 +355,7 @@
 						<p class="text-center">Inscrição realizada com sucesso, acesse <a href="http://bit.ly/2LHdodl" target="_blank"><strong>aqui!</strong></a> para efetuar seu pagamento.</p>
 					</div>
 					<div class="modal-footer">
-						<a class="btn btn-success btn-block" data-dismiss="modal" href="http://bit.ly/2LHdodl" target="_blank">PAGAMENTO</a>
+						<a class="btn btn-success btn-block" href="http://bit.ly/2LHdodl" target="_blank">PAGAMENTO</a>
 					</div>
 				</div>
 			</div>

@@ -2,6 +2,6 @@
 
 	session_start();
 	session_destroy();
-	header("location: http://petlovers2.com.br/caogresso/dogvip/login.php");
+	header("location: http://petlovers2.com.br/caogressos2/dogvip/login.php");
 	exit();
 ?>

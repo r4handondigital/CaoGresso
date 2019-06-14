@@ -25,11 +25,11 @@
 
 		if ($validarLogin->rowCount() == 1):
 			$_SESSION['login'] = true;
-			echo '<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">alert ("Login efetuado com sucesso!");window.location=("http://petlovers2.com.br/caogresso/provet/listagem.php")
+			echo '<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">alert ("Login efetuado com sucesso!");window.location=("http://petlovers2.com.br/caogressos2/provet/listagem.php")
 							</SCRIPT>'; 
 			die();
 		else:      
-			echo '<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">alert ("Login inválido!");window.location=("http://petlovers2.com.br/caogresso/provet/login.php")
+			echo '<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">alert ("Login inválido!");window.location=("http://petlovers2.com.br/caogressos2/provet/login.php")
 							</SCRIPT>';      
 			die();
 		endif;

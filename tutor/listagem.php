@@ -18,7 +18,7 @@
 
 	if ($_SESSION['login'] != true):
 		echo '<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
-				alert ("Faça login para continuar!");window.location=("http://petlovers2.com.br/caogresso/tutor/login.php")
+				alert ("Faça login para continuar!");window.location=("http://petlovers2.com.br/caogressos2/tutor/login.php")
 			</SCRIPT>'; 
 		die();
 	endif;

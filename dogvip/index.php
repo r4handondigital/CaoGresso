@@ -354,20 +354,32 @@
   # Sua inscrição será finalizada  pela equipe de atendimento do evento, mediante aprovação do cão em avaliação de  saúde e comportamento. <strong></strong></p>
         <br />
         <p><strong>Informações do inscrito:</strong></p>
-         <div class="form-group">
-            <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome Completo:" required>
+        	
+        <div class="form-group">
+		    <label for="nome">Nome Completo:</label>
+		    <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome Completo:" required>
+		 </div>
+		
+		 <div class="form-group">
+		    <label for="cpf">CPF:</label>
+		   <input type="text" name="cpf" id="cpf" class="form-control" placeholder="CPF:" required>  
+		 </div>
 
-            <input type="text" name="cpf" id="cpf" class="form-control" placeholder="CPF:" required>           
+		 <div class="form-group">
+		    <label for="email">E-mail:</label>
+		  <input type="email" name="email" id="email" class="form-control" placeholder="E-mail:" required> 
+		 </div>
 
-            <input type="email" name="email" id="email" class="form-control" placeholder="E-mail:" required>
-			 
-			 <input type="text" name="telefone" id="phone" class="form-control" placeholder="Telefone:" required>
+		 <div class="form-group">
+		    <label for="phone">Telefone:</label>
+		  <input type="text" name="telefone" id="phone" class="form-control" placeholder="Telefone:" required>
+		 </div>
 
-            <input type="text" name="endereco" id="rg" class="form-control" placeholder="Endereço:" required>   
-           
+		 <div class="form-group">
+		    <label for="rg">Endereço:</label>
+		 <input type="text" name="endereco" id="rg" class="form-control" placeholder="Endereço:" required> 
+		 </div>
 
-         </div>
-        
          <input name="enviar"  value="pergunta" type="hidden" />
          <input name="cpfcasal" value="" style="display:none;" />
         <button class="btn btn-lg btn-danger btn-block" type="submit">Enviar Inscrição</button>
